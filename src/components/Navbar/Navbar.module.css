@@ -1,0 +1,27 @@
+.logo {
+  height: 4.1875rem;
+  width: 11.375rem;
+}
+
+.navbar {
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.navContainer {
+  padding-left: 7.82rem;
+  padding-right: 31.89rem;
+  padding-top: 0.75rem;
+}
+
+.navContainer a {
+  text-decoration: none;
+  color: #ffffff;
+}
