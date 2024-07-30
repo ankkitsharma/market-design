@@ -1,0 +1,175 @@
+.Vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero {
+  align-items: center;
+}
+
+.Horizontal {
+  display: flex;
+}
+
+.Up {
+  font-size: 12.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: fit-content;
+  color: #e26e23;
+  position: relative;
+}
+
+.Down {
+  justify-content: center;
+  align-items: center;
+  gap: 1.56rem;
+  position: relative;
+}
+
+.HeroContainer {
+  padding-top: 8.3125rem;
+  height: 37.5rem;
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ForBy {
+  font-size: 5.125rem;
+  line-height: 5rem;
+}
+
+.Artists {
+  font-size: 12.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffbb55;
+  line-height: 10rem;
+}
+
+.DownContainer {
+  width: fit-content;
+}
+
+.mgAuto {
+  margin-top: 1.5625rem;
+  margin-left: auto;
+  width: fit-content;
+  font-size: 1.1875rem;
+}
+
+.hLine1 {
+  position: absolute;
+  left: -7%;
+  width: 93.75rem;
+  z-index: -1;
+  top: calc(100% / 2);
+}
+
+.hLine2 {
+  position: absolute;
+  left: -20%;
+  width: 93.5rem;
+  z-index: -1;
+  top: calc(100% / 2);
+}
+
+.vLine1 {
+  position: absolute;
+  height: 37.5rem;
+  top: 5.56rem;
+  left: 24.125rem;
+  z-index: -1;
+}
+
+.vLine2 {
+  position: absolute;
+  height: 37.5rem;
+  top: 5.56rem;
+  right: 27.125rem;
+  z-index: -1;
+}
+
+.HeroBottom {
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  margin-top: 1.5625rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.Connect {
+  padding: 0.625rem 1.1875rem;
+  background-color: #e26e23;
+  color: #ffffff;
+  border: 1px solid #e26e23;
+  border-radius: 1.25rem;
+  font-size: 1.125rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Connect img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.Connect:hover {
+  background-image: linear-gradient(to right, #e26e23, #ffbb55, #e26e23);
+  background-size: 200% auto;
+  animation: gradient 1.5s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.Highlight {
+  color: #e26e23;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving {
+  animation: move 1s ease-in-out forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}

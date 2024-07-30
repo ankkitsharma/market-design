@@ -25,3 +25,7 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+.navContainer a:hover {
+  color: #e26e23;
+}
